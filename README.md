@@ -1,4 +1,12 @@
-# hello-megalo
+# hello-megalo  
+
+## 安装megalo  
+[参考官网](https://megalojs.org/#/quickstart)
+
+## 编译  
+```bash
+npm install
+```
 
 ## 运行
 
