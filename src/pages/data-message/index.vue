@@ -23,12 +23,17 @@
              v-model="inputData"
              placeholder="请输入">
     </div>
-    <div>{{nextData}}</div>
+    <div style="margin-top: 40rpx">storage：{{nextData}}</div>
+    <div style="margin-top: 40rpx">vuex：{{nextVuexData}}</div>
   </div>
 </template>
 
 <script>
+import store from './store'
+import { mapState } from 'vuex'
+
 export default {
+  store,
   data () {
     return {
       counter: 1,
@@ -37,11 +42,12 @@ export default {
       nextData: '222'
     }
   },
+  computed: mapState(['nextVuexData']),
   onLoad () {
     Megalo.setNavigationBarTitle({
       title: '数据通信'
     })
-    Megalo.setStorageSync('nextData', '')
+    Megalo.setStorageSync('nextData', '显示storage里面的数据')
   },
   onShow () {
     this.nextData = Megalo.getStorageSync('nextData')
@@ -49,6 +55,7 @@ export default {
   methods: {
     count () {
       this.counter++
+      // this.$store.commit('saveVuexData', { value: 'aaaaaaaaa' })
     },
     toggleVisiable (visiable) {
       this.visiable = visiable

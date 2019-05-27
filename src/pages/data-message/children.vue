@@ -12,7 +12,10 @@
 </template>
 
 <script>
+import store from './store'
+
 export default {
+  store,
   data () {
     return {
       data: '',
@@ -24,6 +27,7 @@ export default {
   },
   methods: {
     close () {
+      store.commit('saveVuexData', { value: this.inputData })
       Megalo.setStorageSync('nextData', this.inputData)
       Megalo.navigateBack()
     }
