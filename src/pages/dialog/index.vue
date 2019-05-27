@@ -31,11 +31,21 @@ export default {
         Megalo.hideToast()
         return
       }
+      // Megalo.showToast({
+      //   title: 'title',
+      //   icon: 'none',
+      //   duration: 2000,
+      //   success: () => {
+      //     console.log('toast 显示成功了')
+      //     this.isToastShowing = true
+      //   }
+      // })
       Megalo.showToast({
         title: 'title',
         icon: 'none',
         duration: 2000,
-        success: res => {
+        success: () => {
+          console.log('toast 要消失了')
           this.isToastShowing = true
         }
       })
