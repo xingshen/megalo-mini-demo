@@ -1,5 +1,7 @@
 # hello-megalo  
 
+[学习文档在wiki](https://github.com/xingshen/megalo-mini-demo/wiki/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3)
+
 ## 安装megalo  
 [参考官网](https://megalojs.org/#/quickstart)
 
