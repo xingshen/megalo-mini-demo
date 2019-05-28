@@ -27,6 +27,6 @@ npm run dev:alipay
 ```bash
 npm run dev:swan
 ```
-生成的dist-xx目录就是小程序的工程包，可以使用相应的开发者工具导入此包查看效果
+生成的dist-xx目录就是小程序的工程包，可以使用相应的开发者工具导入此包查看效果  
 
-![](http://ougo940xn.bkt.clouddn.com/megalo-mini-demo.gif)
+![image](http://ougo940xn.bkt.clouddn.com/megalo-mini-demo.gif)  
